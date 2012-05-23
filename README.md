@@ -1,6 +1,8 @@
-# Capistrano::Remote::Cache::With::Project::Root
+# Capistrano Remote Cache With Project Root Deployment Strategy
 
-TODO: Write a gem description
+This library extends the RemoteCache strategy in order to
+support deployment from internal folders, e.g. yours
+`Rails.root` resides inside `/yourapp`.
 
 ## Installation
 
@@ -18,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add these lines to your Capistrano recipe:
+
+  set :deploy_via, "remote_cache_with_project_root"
+  set :project_root, "relative/path/to/your/project"
 
 ## Contributing
 
