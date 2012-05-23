@@ -22,8 +22,8 @@ Or install it yourself as:
 
 Add these lines to your Capistrano recipe:
 
-  set :deploy_via, "remote_cache_with_project_root"
-  set :project_root, "relative/path/to/your/project"
+    set :deploy_via, "remote_cache_with_project_root"
+    set :project_root, "relative/path/to/your/project"
 
 ## Contributing
 
